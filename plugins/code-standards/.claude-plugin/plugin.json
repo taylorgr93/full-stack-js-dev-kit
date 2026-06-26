@@ -1,0 +1,5 @@
+{
+  "name": "code-standards",
+  "version": "1.0.0",
+  "description": "JS/TS naming conventions, TypeScript guidelines, ESLint + Prettier config, folder structure patterns, error handling, and KISS principles."
+}
