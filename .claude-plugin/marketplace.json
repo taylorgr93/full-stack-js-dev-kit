@@ -2,6 +2,9 @@
   "name": "full-stack-js-dev-kit",
   "version": "1.0.0",
   "description": "Full-stack JavaScript/TypeScript dev kit — code standards, code review, and git workflow skills for Node.js, React, Next.js, NestJS, and Express projects.",
+  "owner": {
+    "name": "Taylor Gonzalez"
+  },
   "plugins": [
     {
       "name": "code-standards",
