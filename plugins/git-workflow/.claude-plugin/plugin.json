@@ -1,5 +1,7 @@
 {
   "name": "git-workflow",
-  "version": "1.0.0",
-  "description": "Conventional Commits, branch naming, PR templates, release/publish workflow, and changelog generation."
+  "description": "Conventional Commits, branch naming, PR templates, release/publish workflow, and changelog generation.",
+  "author": {
+    "name": "Taylor Gonzalez"
+  }
 }

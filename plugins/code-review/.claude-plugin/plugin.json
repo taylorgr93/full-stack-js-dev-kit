@@ -1,5 +1,7 @@
 {
   "name": "code-review",
-  "version": "1.0.0",
-  "description": "Full code review checklist for JS/TS projects. Covers security, bugs, performance, error handling, architecture, and maintainability."
+  "description": "Full code review checklist for JS/TS projects. Covers security, bugs, performance, error handling, architecture, and maintainability.",
+  "author": {
+    "name": "Taylor Gonzalez"
+  }
 }
