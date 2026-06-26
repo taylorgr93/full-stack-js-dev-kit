@@ -1,6 +1,5 @@
 {
   "name": "full-stack-js-dev-kit",
-  "version": "1.0.0",
   "description": "Full-stack JavaScript/TypeScript dev kit — code standards, code review, and git workflow skills for Node.js, React, Next.js, NestJS, and Express projects.",
   "owner": {
     "name": "Taylor Gonzalez"
@@ -20,11 +19,6 @@
       "name": "git-workflow",
       "description": "Conventional Commits, branch naming, PR templates, release/publish workflow, and changelog generation.",
       "source": "./plugins/git-workflow"
-    },
-    {
-      "name": "full-devkit",
-      "description": "Bundle — installs all full-stack-js-dev-kit skills (code-standards, code-review, git-workflow) in one shot.",
-      "source": "./plugins/full-devkit"
     }
   ]
 }

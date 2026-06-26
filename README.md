@@ -6,12 +6,9 @@ Full-stack JavaScript/TypeScript dev kit for Claude Code. Code standards, code r
 
 ```bash
 # Add the marketplace (one time)
-/plugin marketplace add YOUR_GITHUB_USER/full-stack-js-dev-kit
+/plugin marketplace add taylorgr93/full-stack-js-dev-kit
 
-# Install everything at once
-/plugin install full-devkit@full-stack-js-dev-kit
-
-# Or install individually
+# Install the skills
 /plugin install code-standards@full-stack-js-dev-kit
 /plugin install code-review@full-stack-js-dev-kit
 /plugin install git-workflow@full-stack-js-dev-kit
@@ -24,7 +21,6 @@ Full-stack JavaScript/TypeScript dev kit for Claude Code. Code standards, code r
 | **code-standards** | `/code-standards` | Naming conventions, TypeScript guidelines, ESLint + Prettier config, folder structure, error handling, KISS principles |
 | **code-review** | `/code-review` | Full review checklist covering security, bugs, performance, error handling, architecture, and maintainability |
 | **git-workflow** | `/git-workflow` | Conventional Commits, branch naming, PR templates, versioning, release workflow |
-| **full-devkit** | — | Bundle that installs all skills above |
 
 ## Usage
 

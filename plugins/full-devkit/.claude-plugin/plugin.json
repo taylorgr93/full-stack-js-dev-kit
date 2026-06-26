@@ -1,7 +1,0 @@
-{
-  "name": "full-devkit",
-  "description": "Bundle — installs all full-stack-js-dev-kit skills (code-standards, code-review, git-workflow) in one shot.",
-  "author": {
-    "name": "Taylor Gonzalez"
-  }
-}

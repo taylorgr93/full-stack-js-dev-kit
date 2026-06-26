@@ -6,8 +6,6 @@ description: >
   check code quality, find bugs, check correctness, or review architecture.
   Covers security, bugs, performance, readability, error handling, architecture,
   and maintainability for Node.js, React, Next.js, NestJS, and Express projects.
-user-invocable: true
-argument-hint: "file path or module name"
 ---
 
 # Code Review

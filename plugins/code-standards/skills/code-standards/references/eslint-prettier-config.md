@@ -22,28 +22,16 @@ Base configuration for JS/TS projects. Adjust per project as needed.
 For projects using ESLint v9+ with flat config:
 
 ```javascript
-import js from '@eslint/js';
-import tsPlugin from '@typescript-eslint/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
 import prettierConfig from 'eslint-config-prettier';
 
-export default [
-  js.configs.recommended,
+export default tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
   prettierConfig,
   {
-    files: ['**/*.ts', '**/*.tsx'],
-    languageOptions: {
-      parser: tsParser,
-      parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-      },
-    },
-    plugins: {
-      '@typescript-eslint': tsPlugin,
-    },
     rules: {
-      // TypeScript
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unused-vars': [
         'warn',
@@ -51,8 +39,6 @@ export default [
       ],
       '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-empty-object-type': 'warn',
-
-      // General
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-debugger': 'error',
       'no-duplicate-imports': 'error',
@@ -65,7 +51,7 @@ export default [
   {
     ignores: ['dist/', 'node_modules/', 'coverage/', '.next/', 'build/'],
   },
-];
+);
 ```
 
 ## ESLint (.eslintrc.json) — Legacy Config
@@ -102,11 +88,8 @@ For projects still using ESLint v8 or legacy config format:
 ## Required Dev Dependencies
 
 ```bash
-# Core
-npm i -D eslint prettier eslint-config-prettier
-
-# TypeScript support
-npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
+# Core + TypeScript
+npm i -D eslint prettier eslint-config-prettier typescript-eslint
 
 # For React/Next.js projects, add:
 npm i -D eslint-plugin-react eslint-plugin-react-hooks
