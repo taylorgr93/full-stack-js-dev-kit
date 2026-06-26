@@ -77,6 +77,28 @@ style — that's the linter's job.
 - No hardcoded values — use environment variables
 - No code duplication
 
+## Multi-Agent Review Workflow
+
+When reviewing **more than 3 files**, launch 3 subagents in parallel (model:
+opus) to speed up the review. Each agent handles a subset of criteria:
+
+| Agent | Criteria |
+|-------|----------|
+| **Agent 1 — Security & Bugs** | Sections 1 (Security) and 2 (Bugs & Correctness) |
+| **Agent 2 — Reliability** | Sections 3 (Error Handling) and 4 (Performance) |
+| **Agent 3 — Design** | Sections 5 (Architecture) and 6 (Code Quality) |
+
+Each agent must:
+1. Read the target files with the Read tool
+2. Apply **only** its assigned criteria from this skill
+3. Return findings in the standard format (Severity / File / Issue / Fix)
+
+After all 3 agents complete, consolidate their findings, deduplicate any
+overlapping issues, and append the "What's Good" section.
+
+For **3 files or fewer**, run the review inline without subagents — the
+overhead is not worth it for small reviews.
+
 ## Automated Checks
 
 If the project has them configured, run these and include relevant findings:

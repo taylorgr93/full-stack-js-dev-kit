@@ -145,6 +145,7 @@ vite.config.ts.timestamp-*
 # Claude Code
 CLAUDE.md
 .claude/
+TODO.md
 
 # Vercel Skills CLI
 .agents/
