@@ -9,34 +9,22 @@
     {
       "name": "code-standards",
       "description": "JS/TS naming conventions, TypeScript guidelines, ESLint + Prettier config, folder structure patterns, error handling, and KISS principles.",
-      "source": {
-        "source": "self",
-        "path": "plugins/code-standards"
-      }
+      "source": "./plugins/code-standards"
     },
     {
       "name": "code-review",
       "description": "Full code review checklist for JS/TS projects. Covers security, bugs, performance, error handling, architecture, and maintainability.",
-      "source": {
-        "source": "self",
-        "path": "plugins/code-review"
-      }
+      "source": "./plugins/code-review"
     },
     {
       "name": "git-workflow",
       "description": "Conventional Commits, branch naming, PR templates, release/publish workflow, and changelog generation.",
-      "source": {
-        "source": "self",
-        "path": "plugins/git-workflow"
-      }
+      "source": "./plugins/git-workflow"
     },
     {
       "name": "full-devkit",
       "description": "Bundle — installs all full-stack-js-dev-kit skills (code-standards, code-review, git-workflow) in one shot.",
-      "source": {
-        "source": "self",
-        "path": "plugins/full-devkit"
-      }
+      "source": "./plugins/full-devkit"
     }
   ]
 }
